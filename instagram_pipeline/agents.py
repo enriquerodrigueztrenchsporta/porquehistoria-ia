@@ -74,6 +74,24 @@ def verify_facts(evidence: dict, client: OllamaClient) -> dict:
     return report
 
 
+def normalize_visuals(episode: dict) -> dict:
+    """Coerce the purely presentational template choice; never touches narration or labels.
+
+    Small local models often answer 'timeline|map' or invent a kind. Picking an allowed
+    template is safe (no model output is executed) and avoids discarding a correct script.
+    """
+    for scene in episode.get("scenes") or []:
+        visual = scene.get("visual") if isinstance(scene, dict) else None
+        if not isinstance(visual, dict):
+            continue
+        kind = str(visual.get("kind", "")).lower()
+        if kind not in VISUAL_KINDS:
+            visual["kind"] = next((k for k in sorted(VISUAL_KINDS) if k in kind), "artifact")
+        for key in set(visual) - {"kind", "title", "label", "accent"}:
+            del visual[key]
+    return episode
+
+
 def validate_episode(episode: dict, evidence: dict) -> None:
     if not isinstance(episode.get("title"), str) or not (3 <= len(episode["title"]) <= 90):
         raise AgentError("Título ausente o demasiado largo.")
@@ -164,7 +182,7 @@ def generate_episode(topic: dict, evidence: dict, ollama_url="http://127.0.0.1:1
         episode = client.json(instructions, {"evidence": evidence, "brief": brief,
                                            "correction": str(last_error) if last_error else None})
         try:
-            report = verify_episode(episode, evidence, client)
+            report = verify_episode(normalize_visuals(episode), evidence, client)
             episode.update({"topic_id": topic["id"], "sources": evidence["sources"],
                             "verification": {**report, "facts": facts_review,
                                              "institution_count": evidence["institution_count"],

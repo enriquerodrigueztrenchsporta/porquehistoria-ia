@@ -195,7 +195,8 @@
       ],
       "editorial_notes": "No afirmar una fecha exacta de demolición programada. Hablar de concesión temporal, riesgo de desaparición y utilidad radioeléctrica según la fuente oficial.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "toureiffel.paris devuelve HTTP 403 desde los servidores de GitHub Actions (28-10-2026)"
     },
     {
       "id": "penny_black",
@@ -551,7 +552,8 @@
       ],
       "editorial_notes": "El recuento de 20 campañas es el de la web oficial a fecha de consulta. No afirmar el color actual exacto.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "toureiffel.paris devuelve HTTP 403 desde los servidores de GitHub Actions (28-10-2026)"
     },
     {
       "id": "harrison_h4",
@@ -927,7 +929,8 @@
       ],
       "editorial_notes": "Milímetros, no centímetros: no exagerar. La inclinación es mínima y no afecta a la estructura.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "toureiffel.paris devuelve HTTP 403 desde los servidores de GitHub Actions (28-10-2026)"
     },
     {
       "id": "nelson_coat",
@@ -1293,7 +1296,8 @@
       ],
       "editorial_notes": "No afirmar que fue la estructura más alta del mundo sin fuente. No dar número de remaches ni obreros.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "toureiffel.paris devuelve HTTP 403 desde los servidores de GitHub Actions (28-10-2026)"
     },
     {
       "id": "towns_local_time",
@@ -1528,7 +1532,8 @@
       ],
       "editorial_notes": "Gustave Eiffel no fue el único diseñador del proyecto: no presentarlo como autor exclusivo.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "toureiffel.paris devuelve HTTP 403 desde los servidores de GitHub Actions (28-10-2026)"
     },
     {
       "id": "royal_observatory",

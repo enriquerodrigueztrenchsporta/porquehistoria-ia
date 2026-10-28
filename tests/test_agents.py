@@ -127,3 +127,15 @@ class AgentTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NormalizeVisualsTests(unittest.TestCase):
+    def test_invalid_kind_becomes_allowed_template_and_text_is_untouched(self):
+        from instagram_pipeline.agents import normalize_visuals
+        episode = {"scenes": [
+            {"narration": "Texto", "visual": {"kind": "timeline|map", "title": "T", "label": "L", "script": "x"}},
+            {"narration": "Texto", "visual": {"kind": "explosion", "title": "T", "label": "L"}}]}
+        normalize_visuals(episode)
+        self.assertEqual(episode["scenes"][0]["visual"], {"kind": "map", "title": "T", "label": "L"})
+        self.assertEqual(episode["scenes"][1]["visual"]["kind"], "artifact")
+        self.assertEqual(episode["scenes"][0]["narration"], "Texto")
