@@ -47,7 +47,7 @@ def quality_gate(episode, output_dir):
 
 def generate(output_dir, used_topics):
     from .agents import generate_episode
-    from .research import discover_topic, load_topics, research_topic
+    from .research import ResearchError, discover_topic, load_topics, research_topic
     from .render import render_episode
 
     model = os.environ.get("OLLAMA_MODEL") or "qwen2.5:7b"
@@ -56,16 +56,31 @@ def generate(output_dir, used_topics):
     if not voice.is_file():
         raise RuntimeError("Falta el modelo neuronal de voz Piper; ejecuta scripts/download_voice.py.")
     used_ids = {t["id"] for t in used_topics}
-    candidates = [t for t in load_topics(ROOT / "data/topics.json") if t["id"] not in used_ids]
+    candidates = [t for t in load_topics(ROOT / "data/topics.json")
+                  if t["id"] not in used_ids and not t.get("disabled")]
     errors = []
-    # A second, different topic is tried if a site is inaccessible or a review fails.
-    for index in range(2):
+    # Up to two AI attempts (a review failure moves on to a different topic). A source that is
+    # unreachable or blocked fails in research, before any model call, so it is skipped cheaply.
+    queue = iter(candidates[:8])
+    ai_attempts = 0
+    while ai_attempts < 2:
+        ai_attempts += 1
         try:
-            topic = candidates[index] if index < len(candidates) else discover_topic(
-                ollama_url=endpoint, model=model, used_topics=used_topics,
-                cache_dir=ROOT / ".runtime/sources", max_articles=3)
-            print(f"Investigación y revisión: {topic['title']}", flush=True)
-            evidence = research_topic(topic, ROOT / ".runtime/sources")
+            topic = next(queue, None)
+            while topic is not None:
+                try:
+                    print(f"Investigación: {topic['title']}", flush=True)
+                    evidence = research_topic(topic, ROOT / ".runtime/sources")
+                    break
+                except ResearchError as exc:
+                    errors.append(f"{topic['id']}: {exc}")
+                    print(errors[-1], flush=True)
+                    topic = next(queue, None)
+            if topic is None:
+                topic = discover_topic(ollama_url=endpoint, model=model, used_topics=used_topics,
+                                       cache_dir=ROOT / ".runtime/sources", max_articles=3)
+                evidence = research_topic(topic, ROOT / ".runtime/sources")
+            print(f"Revisión con agentes: {topic['title']}", flush=True)
             episode = generate_episode(topic, evidence, endpoint, model)
             output_dir.mkdir(parents=True, exist_ok=True)
             atomic_json(output_dir / "evidence.json", evidence)
@@ -77,7 +92,7 @@ def generate(output_dir, used_topics):
             (output_dir / "caption.txt").write_text(caption, encoding="utf-8")
             return topic, episode, manifest, caption
         except (RuntimeError, ValueError, KeyError, OSError) as exc:
-            errors.append(f"Intento {index + 1}: {exc}")
+            errors.append(f"Intento {ai_attempts}: {exc}")
             print(errors[-1], flush=True)
     raise RuntimeError("No hay vídeo verificable y válido. " + " | ".join(errors))
 
@@ -158,14 +173,34 @@ def doctor():
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
+def check_sources():
+    """Fetch every catalogue source from this machine and re-check every literal quote."""
+    from .research import load_topics, research_topic
+    failed = []
+    # Topics marked "disabled" keep their research but are never fetched or published.
+    topics = [t for t in load_topics(ROOT / "data/topics.json") if not t.get("disabled")]
+    for topic in topics:
+        try:
+            research_topic(topic, ROOT / ".runtime/sources", refresh=True)
+            print(f"OK    {topic['id']}", flush=True)
+        except (RuntimeError, OSError) as exc:
+            failed.append(topic["id"])
+            print(f"FALLO {topic['id']}: {exc}", flush=True)
+    print(f"{len(topics) - len(failed)}/{len(topics)} temas accesibles y con citas literales vigentes.")
+    if failed:
+        raise RuntimeError("Fuentes inaccesibles o modificadas: " + ", ".join(failed))
+
+
 def main():
     parser = argparse.ArgumentParser(description="PorQueHistoria: animación histórica basada en evidencia")
-    parser.add_argument("command", choices=("doctor", "demo", "daily"))
+    parser.add_argument("command", choices=("doctor", "demo", "daily", "check-sources"))
     parser.add_argument("--preview", action="store_true", help="Generar con IA y revisar, sin publicar")
     args = parser.parse_args()
     try:
         if args.command == "doctor":
             doctor()
+        elif args.command == "check-sources":
+            check_sources()
         elif args.command == "demo":
             from .render import render_episode
             episode = json.loads((ROOT / "data/demo_episode.json").read_text(encoding="utf-8"))

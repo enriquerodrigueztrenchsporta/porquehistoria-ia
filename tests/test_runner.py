@@ -33,3 +33,33 @@ class QualityGateTests(unittest.TestCase):
             episode = {"generation_mode": "local_ai", "verification": {"passed": True}}
             with self.assertRaises(RuntimeError):
                 quality_gate(episode, out)
+
+
+class GenerateFallbackTests(unittest.TestCase):
+    def test_blocked_source_is_skipped_without_using_an_ai_attempt(self):
+        from unittest.mock import patch
+        from instagram_pipeline import runner
+        from instagram_pipeline.research import ResearchError
+
+        topics = [{"id": t, "title": t, "sources": []} for t in ("blocked", "b", "c", "d")]
+
+        def research(topic, cache_dir):
+            if topic["id"] == "blocked":
+                raise ResearchError("Fuente no disponible (HTTP 403)")
+            return {"facts": []}
+
+        reviewed = []
+
+        def review(topic, evidence, endpoint, model):
+            reviewed.append(topic["id"])
+            raise RuntimeError("rechazado por el verificador")
+
+        with tempfile.TemporaryDirectory() as folder, \
+                patch.dict("os.environ", {"PIPER_VOICE": __file__}), \
+                patch("instagram_pipeline.research.load_topics", return_value=topics), \
+                patch("instagram_pipeline.research.research_topic", side_effect=research), \
+                patch("instagram_pipeline.agents.generate_episode", side_effect=review):
+            with self.assertRaises(RuntimeError):
+                runner.generate(Path(folder), [])
+        # Two AI attempts, both on reachable topics; the 403 topic never reaches the model.
+        self.assertEqual(reviewed, ["b", "c"])

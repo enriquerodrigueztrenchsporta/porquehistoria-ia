@@ -93,7 +93,8 @@
       ],
       "editorial_notes": "Decir 'ejemplar conservado con fecha', nunca 'primer libro de la historia' ni 'invención de la imprenta'. No atribuir a este libro la primera impresión conocida.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "idp.bl.uk devuelve HTTP 403 al acceso automatizado (28-10-2026)"
     },
     {
       "id": "jacquard_cards",
@@ -146,7 +147,8 @@
       ],
       "editorial_notes": "No llamarlo ordenador electrónico ni afirmar que Jacquard inventó todas las tarjetas perforadas. Se omiten fechas del desarrollo porque distintas fuentes describen etapas distintas.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "sciencemuseumgroup.org.uk devuelve HTTP 403 al acceso automatizado (28-10-2026)"
     },
     {
       "id": "eiffel_radio",
@@ -250,7 +252,8 @@
       ],
       "editorial_notes": "Distinguir venta y validez postal. No decir que Victoria tenía quince años en 1840; esa edad corresponde al boceto de 1834.",
       "reviewed_on": "2026-10-28",
-      "origin": "curated_institutional_sources"
+      "origin": "curated_institutional_sources",
+      "disabled": "metmuseum.org devuelve HTTP 429 al acceso automatizado (28-10-2026)"
     },
     {
       "id": "liberty_crates",

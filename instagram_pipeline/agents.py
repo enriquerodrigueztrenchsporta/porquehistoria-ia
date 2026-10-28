@@ -59,7 +59,11 @@ def verify_facts(evidence: dict, client: OllamaClient) -> dict:
         "su cita original y contexto. Coincidencia de palabras NO prueba que la afirmación sea cierta. "
         "Rechaza causalidad, fechas, superlativos o detalles que la evidencia no afirme; respeta probabilidades. "
         "Devuelve {passed:boolean, facts:[{id:string,supported:boolean,reason:string}],issues:[string]}. "
-        "Incluye TODOS los hechos. Ante duda, supported=false y passed=false.", evidence)
+        "Incluye TODOS los hechos. Ante duda, supported=false y passed=false. "
+        "issues contiene solo problemas concretos de los hechos revisados; si no hay ninguno, []. "
+        "No repitas advertencias generales.",
+        # Editorial notes guide the writer and auditor; they are not claims to verify here.
+        {key: value for key, value in evidence.items() if key != "editorial_notes"})
     actual = report.get("facts", [])
     expected = {f["id"] for f in evidence["facts"]}
     if (report.get("passed") is not True or report.get("issues") != [] or
@@ -116,7 +120,9 @@ def verify_episode(episode: dict, evidence: dict, client: OllamaClient) -> dict:
         "Las ilustraciones son simbólicas, no reconstrucciones exactas. Devuelve "
         "{passed:boolean,title_supported:boolean,hook_supported:boolean,scenes:[{id:string,"
         "supported:boolean,visual_supported:boolean,reason:string}],issues:[string]}. "
-        "Incluye todas las escenas. Si hay dudas o un detalle no demostrado, passed=false.",
+        "Incluye todas las escenas. Si hay dudas o un detalle no demostrado, passed=false. "
+        "issues contiene solo problemas concretos encontrados en el episodio; si no hay ninguno, []. "
+        "Las editorial_notes son criterios para revisar, no problemas que listar.",
         {"episode": episode, "evidence": evidence})
     actual = report.get("scenes", [])
     expected = {s["id"] for s in episode["scenes"]}
