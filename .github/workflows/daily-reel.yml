@@ -1,0 +1,108 @@
+# Daily HistoryFacts Reel: research -> AI agents (Ollama) -> animation + Piper voice -> QA -> publish at 20:00 Madrid.
+#
+# GitHub cron is UTC and has no DST, so two triggers are scheduled (15:07 and 16:07 UTC)
+# and the "window" step keeps only the one that lands around 17:00 Madrid local time.
+# The pipeline itself waits until exactly 20:00 Europe/Madrid before media_publish.
+name: daily-reel
+
+on:
+  schedule:
+    - cron: "7 15 * * *"
+    - cron: "7 16 * * *"
+  workflow_dispatch:
+    inputs:
+      preview:
+        description: "Solo generar el vídeo (sin publicar)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # the publication ledger is committed to data/publication-state.json
+
+concurrency:
+  group: instagram-historyfacts
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    env:
+      OLLAMA_MODEL: qwen2.5:7b
+      OLLAMA_TIMEOUT: "900"
+      PIPER_VOICE: ${{ github.workspace }}/models/es_ES-davefx-medium.onnx
+    steps:
+      - name: Publication window (Europe/Madrid)
+        id: window
+        run: |
+          now=$(TZ=Europe/Madrid date +%H%M)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || { [ "$now" -ge 1630 ] && [ "$now" -lt 1900 ]; }; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Hora Madrid $now fuera de ventana; lo atiende el otro disparador."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.window.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.window.outputs.run == 'true'
+        with:
+          python-version: "3.12"   # onnxruntime (Piper) has no wheels for the newest Python
+          cache: pip
+          cache-dependency-path: requirements-cloud.txt
+
+      - name: Dependencies
+        if: steps.window.outputs.run == 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core
+          pip install -r requirements-cloud.txt
+
+      - name: Cache Piper voice and Ollama model
+        if: steps.window.outputs.run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: |
+            models
+            ~/.ollama/models
+          key: models-qwen2.5-7b-davefx-v1
+
+      - name: Start Ollama (local model, no account)
+        if: steps.window.outputs.run == 'true'
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          sudo systemctl stop ollama 2>/dev/null || true
+          nohup ollama serve > "$RUNNER_TEMP/ollama.log" 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:11434/api/tags >/dev/null && break; sleep 2; done
+          ollama pull "$OLLAMA_MODEL"
+          python scripts/download_voice.py
+
+      - name: Preview (no publication)
+        if: steps.window.outputs.run == 'true' && github.event_name == 'workflow_dispatch' && inputs.preview
+        run: python -m instagram_pipeline daily --preview
+
+      - name: Generate and publish at 20:00
+        if: steps.window.outputs.run == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.preview)
+        env:
+          PUBLISH_ENABLED: ${{ vars.PUBLISH_ENABLED }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          IG_EXPECTED_USERNAME: ${{ vars.IG_EXPECTED_USERNAME }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m instagram_pipeline daily
+
+      - name: Keep the reel and agent reports for review
+        if: always() && steps.window.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ github.run_id }}
+          path: |
+            artifacts/*/reel.mp4
+            artifacts/*/episode.json
+            artifacts/*/evidence.json
+            artifacts/*/caption.txt
+            artifacts/*/render-manifest.json
+          retention-days: 14
+          if-no-files-found: ignore

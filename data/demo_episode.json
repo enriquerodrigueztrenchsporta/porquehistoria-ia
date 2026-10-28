@@ -1,0 +1,80 @@
+{
+  "topic_id": "greenwich_time_ball",
+  "title": "La bola que daba la hora a los barcos",
+  "hook": "¿Puede una bola dar la hora a los barcos?",
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": "¿Puede una bola dar la hora a los barcos? En Greenwich, una señal visual cumplía precisamente esa función: comunicar la hora a quienes navegaban por el Támesis.",
+      "fact_ids": [
+        "f3"
+      ],
+      "visual": {
+        "kind": "artifact",
+        "title": "Una bola daba la hora",
+        "label": "Greenwich · señal visual",
+        "accent": "#E4B968"
+      }
+    },
+    {
+      "id": "s2",
+      "narration": "El sistema comenzó a utilizarse en mil ochocientos treinta y tres. Desde el Observatorio de Greenwich, la bola ofrecía una referencia horaria que podía verse desde los barcos.",
+      "fact_ids": [
+        "f1",
+        "f3"
+      ],
+      "visual": {
+        "kind": "timeline",
+        "title": "El comienzo",
+        "label": "1833 · Greenwich",
+        "accent": "#E4B968"
+      }
+    },
+    {
+      "id": "s3",
+      "narration": "La señal clave era su caída, a la una de la tarde. Lo que había que observar era ese movimiento, porque marcaba la hora.",
+      "fact_ids": [
+        "f2"
+      ],
+      "visual": {
+        "kind": "comparison",
+        "title": "La caída era la señal",
+        "label": "13:00 · una referencia compartida",
+        "accent": "#D6745B"
+      }
+    },
+    {
+      "id": "s4",
+      "narration": "Una bola, una caída y una referencia compartida. Así se comunicaba el tiempo a los barcos del Támesis. La historia está documentada por los Museos Reales de Greenwich.",
+      "fact_ids": [
+        "f2",
+        "f3"
+      ],
+      "visual": {
+        "kind": "document",
+        "title": "Historia documentada",
+        "label": "Fuente: Royal Museums Greenwich",
+        "accent": "#7DA99A"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The Greenwich Time Ball",
+      "url": "https://www.rmg.co.uk/royal-observatory/attractions/greenwich-time-ball",
+      "institution": "Royal Museums Greenwich"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "manual_review": true,
+    "review_mode": "assistant_review_of_official_source_during_setup",
+    "reviewed_on": "2026-10-28",
+    "institution_count": 1,
+    "limitations": "Muestra redactada por el asistente con la fuente oficial consultada. No ejecutada por los agentes Ollama. Ilustración simbólica."
+  },
+  "generation_mode": "curated_demo",
+  "agent_runs": [],
+  "publication_allowed": false
+}

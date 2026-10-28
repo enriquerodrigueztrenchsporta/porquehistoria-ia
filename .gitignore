@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+artifacts/
+.runtime/
+models/
+tools/
+*.log
+*.mp4
+*.wav
+*.onnx
+*.onnx.json
+*.token
+secrets.*

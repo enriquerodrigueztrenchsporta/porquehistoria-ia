@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "topics": [
+    {
+      "id": "greenwich_time_ball",
+      "title": "La bola que daba la hora a los barcos",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The Greenwich Time Ball",
+          "url": "https://www.rmg.co.uk/royal-observatory/attractions/greenwich-time-ball",
+          "institution": "Royal Museums Greenwich"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La bola horaria de Greenwich comenzó a utilizarse en 1833.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "The Time Ball was first used in 1833"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "La caída de la bola señala la una de la tarde.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "At 1pm exactly, the ball falls"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "La señal de Greenwich comunicaba la hora a barcos del Támesis.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "distributing time to ships on the Thames"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar que Greenwich inventó las bolas horarias ni que fue la primera. No afirmar que la bola fuera roja en 1833. Evitar garantizar funcionamiento actual diario: viento y mantenimiento pueden impedirlo. Animación simbólica.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "diamond_sutra",
+      "title": "Un libro impreso con fecha del año 868",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The Diamond Sutra",
+          "url": "https://idp.bl.uk/blog/the-diamond-sutra/",
+          "institution": "British Library"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El Sutra del Diamante conservado en la Biblioteca Británica se identifica como el libro impreso con fecha más antiguo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "world’s earliest dated printed book"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Ese ejemplar fue realizado en el año 868.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "was made in AD 868"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Fue hallado en una cueva oculta del conjunto budista de Mogao, en Dunhuang.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "in a hidden cave at the Buddhist Mogao cave site in Dunhuang"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Decir 'ejemplar conservado con fecha', nunca 'primer libro de la historia' ni 'invención de la imprenta'. No atribuir a este libro la primera impresión conocida.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "jacquard_cards",
+      "title": "Tarjetas que daban instrucciones a un telar",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Jacquard Hand Loom",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8405056/jacquard-hand-loom",
+          "institution": "Science Museum Group"
+        },
+        {
+          "id": "s2",
+          "title": "The Jacquard loom: Innovation in textiles and computing",
+          "url": "https://www.nms.ac.uk/discover-catalogue/the-jacquard-loom-innovation-in-textiles-and-computing",
+          "institution": "National Museums Scotland"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Las tarjetas perforadas daban instrucciones al telar Jacquard para tejer un patrón.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "The punched cards at the top gave the loom instructions to weave a pattern."
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Cada fila de agujeros correspondía a una fila del patrón textil.",
+          "evidence": [
+            {
+              "source_id": "s2",
+              "quote": "Each row of punched holes corresponded to a row of a textile pattern."
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El almacenamiento de información mediante tarjetas perforadas fue un antecedente de la informática.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a precursor to modern computing"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No llamarlo ordenador electrónico ni afirmar que Jacquard inventó todas las tarjetas perforadas. Se omiten fechas del desarrollo porque distintas fuentes describen etapas distintas.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "eiffel_radio",
+      "title": "La radio ayudó a conservar la Torre Eiffel",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "How radio saved the Eiffel Tower from destruction",
+          "url": "https://www.toureiffel.paris/en/news/130-years/why-was-eiffel-tower-kept",
+          "institution": "Société d’Exploitation de la Tour Eiffel"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La Torre Eiffel se inauguró para la Exposición Universal de París de 1889.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "1889 Paris Exposition Universelle"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Gustave Eiffel había recibido un permiso de veinte años para utilizar el terreno.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a 20-year permit"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Su utilización como antena de radio fue decisiva para conservar la torre.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "its use as a giant radio antenna saved it from destruction"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar una fecha exacta de demolición programada. Hablar de concesión temporal, riesgo de desaparición y utilidad radioeléctrica según la fuente oficial.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "penny_black",
+      "title": "El sello que retrató a una reina adolescente",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "William Wyon & the Penny Black",
+          "url": "https://www.royalmintmuseum.org.uk/journal/guest-articles/penny-black/",
+          "institution": "Royal Mint Museum"
+        },
+        {
+          "id": "s2",
+          "title": "Unused block of four Penny Black postage stamps",
+          "url": "https://www.metmuseum.org/art/collection/search/211407",
+          "institution": "The Metropolitan Museum of Art"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El Penny Black es considerado el primer sello postal adhesivo del mundo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "world’s first adhesive postage stamp"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Se podía utilizar para el franqueo desde el 6 de mayo de 1840.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "valid for postage from 6 May 1840"
+            },
+            {
+              "source_id": "s2",
+              "quote": "issued May 6, 1840"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El retrato de Victoria se basaba en un boceto de 1834, cuando tenía quince años.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "sketch from 1834 when she was only 15"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Distinguir venta y validez postal. No decir que Victoria tenía quince años en 1840; esa edad corresponde al boceto de 1834.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "liberty_crates",
+      "title": "Una estatua que cruzó el océano en cajas",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Overview + History: Statue of Liberty",
+          "url": "https://www.statueofliberty.org/statue-of-liberty/overview-history/",
+          "institution": "Statue of Liberty–Ellis Island Foundation"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La Estatua de la Libertad se dividió en 350 piezas y se embaló en 214 cajas para transportarla.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "350 individual pieces and packed in 214 crates"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Su travesía del Atlántico se realizó a bordo de la fragata Isère.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "trans-Atlantic voyage aboard the frigate Isère"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El pedestal quedó terminado en abril de 1886.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "The pedestal was completed in April 1886"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No confundir número de piezas y de cajas. Se evita la fecha exacta de llegada, tratada de forma distinta en fuentes institucionales.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "wright_four_flights",
+      "title": "El día de los cuatro vuelos de los Wright",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "120 Years Ago: The First Powered Flight at Kitty Hawk",
+          "url": "https://www.nasa.gov/history/120-years-ago-the-first-powered-flight-at-kitty-hawk/",
+          "institution": "NASA"
+        },
+        {
+          "id": "s2",
+          "title": "Fourth Flight Landing",
+          "url": "https://www.nps.gov/places/000/fourth-flight-landing.htm",
+          "institution": "National Park Service"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Los vuelos históricos de los Wright tuvieron lugar el 17 de diciembre de 1903 en Kill Devil Hills.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "on Dec. 17, 1903, at Kill Devil Hills"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "El vuelo de Orville duró unos doce segundos y recorrió 120 pies.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "flight lasted just 12 seconds, traveled 120 feet"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Wilbur pilotó el cuarto vuelo del día, que recorrió 852 pies en 59 segundos.",
+          "evidence": [
+            {
+              "source_id": "s2",
+              "quote": "Wilbur piloted the 1903 Wright Flyer 852 feet in 59 seconds"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No comparar con vuelos en globo ni atribuir 'primer vuelo humano'. Doce segundos es aproximado. Mantener pies para evitar conversiones automáticas erróneas.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "antikythera_gears",
+      "title": "Engranajes antiguos para calcular eclipses",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The Antikythera Mechanism",
+          "url": "https://olympicgames.culture.gov.gr/en/texnologia/1_Mixanismos-Antikithirwn.html",
+          "institution": "Hellenic Ministry of Culture"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El mecanismo de Anticitera se conserva en 82 fragmentos que incluyen treinta engranajes dentados.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "preserved in 82 fragments, bearing 30 gears with teeth"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Entre sus funciones estaba el cálculo de eclipses solares y lunares.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "solar and lunar eclipses"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "La ficha del Ministerio de Cultura griego propone una datación probable entre 150 y 100 antes de Cristo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Probably 150 – 100 BC"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "La fecha es probable, no exacta. Treinta es el número conservado indicado por la ficha, no necesariamente el total original. No representar piezas como reconstrucción arqueológica exacta ni llamarlo ordenador electrónico.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    }
+  ]
+}
