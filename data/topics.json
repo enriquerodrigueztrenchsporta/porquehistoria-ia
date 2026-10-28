@@ -398,6 +398,1396 @@
       "editorial_notes": "La fecha es probable, no exacta. Treinta es el número conservado indicado por la ficha, no necesariamente el total original. No representar piezas como reconstrucción arqueológica exacta ni llamarlo ordenador electrónico.",
       "reviewed_on": "2026-10-28",
       "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "moon_trees",
+      "title": "Árboles que viajaron a la Luna",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Moon Trees Stand as Living Testaments to First Voyages to Moon",
+          "url": "https://www.nasa.gov/history/moon-trees-stand-as-living-testaments-to-first-voyages-to-moon/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El astronauta Stuart Roosa llevó en su equipaje personal del Apolo 14, en 1971, entre 400 y 500 semillas de árboles.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "approximately 400-500 loblolly pine"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "A su regreso, las semillas germinaron y se convirtieron en los llamados árboles lunares, plantados en Estados Unidos y en otros países.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "seeds were germinated and grew into"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Roosa había trabajado como bombero forestal paracaidista en los años cincuenta.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Roosa served as a smokejumper in the 1950s"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Las semillas viajaron en órbita lunar, no pisaron la superficie de la Luna. No afirmar que los árboles crezcan de forma distinta. El recipiente se rompió durante la descontaminación: no inventar resultados del experimento.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "liberty_green",
+      "title": "Por qué la Estatua de la Libertad es verde",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Frequently Asked Questions About the Statue of Liberty",
+          "url": "https://www.nps.gov/stli/planyourvisit/frequently-asked-questions-statue-of-liberty.htm",
+          "institution": "National Park Service"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El verde de la Estatua de la Libertad es una pátina formada por la oxidación natural de su cobre.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "copper has naturally oxidized to form its familiar"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "En muchos puntos, esa pátina es tan gruesa como el cobre que tiene detrás.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "as thick, in many places, as the copper behind it"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "La pátina protege el cobre del desgaste natural.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "protects the copper from naturally wearing away"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No decir que fue pintada de verde. No dar plazos de oxidación: esta fuente no los menciona.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "eiffel_paint",
+      "title": "La Torre Eiffel se repinta cada siete años",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Painting and color of the Eiffel Tower",
+          "url": "https://www.toureiffel.paris/en/the-monument/painting-eiffel-tower",
+          "institution": "Tour Eiffel (SETE)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La Torre Eiffel ha sido repintada 20 veces, de media una vez cada 7 años.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "repainted 20 times—an average of once every 7 years"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Durante su montaje en 1887 y 1888 su color era el rojo veneciano.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Venetian red was the color"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Una campaña de pintura emplea 60 toneladas de pintura.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "60 tonnes of paint"
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "text": "Entre dos campañas se pierden por erosión unas 15 toneladas de pintura.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "estimated at 15 tonnes"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "El recuento de 20 campañas es el de la web oficial a fecha de consulta. No afirmar el color actual exacto.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "harrison_h4",
+      "title": "El reloj que resolvió la longitud",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Longitude found - the story of Harrison's timekeepers",
+          "url": "https://www.rmg.co.uk/stories/time/harrisons-clocks-longitude-problem",
+          "institution": "Royal Museums Greenwich"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "John Harrison llegó a Londres buscando las recompensas prometidas por la Ley de la Longitud de 1714.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the rewards promised by the 1714 Longitude Act"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Su reloj marino H4 hace tic cinco veces por segundo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "H4 ticks five times a second"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "En marzo de 1764 Harrison zarpó con el H4 y llegó a su destino en mayo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Harrison sailed with H4 in March 1764"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No decir que Harrison recibió de inmediato todo el premio: hubo una larga disputa. No afirmar que el H4 fuera el primer cronómetro marino.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "decimal_day",
+      "title": "El día que el Reino Unido cambió sus monedas",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Decimalisation",
+          "url": "https://www.royalmintmuseum.org.uk/journal/history/decimalisation/",
+          "institution": "Royal Mint Museum"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El Día Decimal británico se fijó para el lunes 15 de febrero de 1971.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "D Day had long been set for Monday 15 February 1971"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Hasta entonces, una libra equivalía a 20 chelines o a 240 peniques.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a pound of 20 shillings or 240 pence"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El periodo de transición terminó el 31 de agosto de 1971, meses antes de lo previsto.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "months ahead of schedule"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No confundir con el Día D de 1944: aclararlo si se usa la expresión 'D Day'.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "jefferson_library",
+      "title": "La biblioteca de Jefferson salvó al Congreso",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Jefferson's Library",
+          "url": "https://www.loc.gov/exhibits/jefferson/jefflib.html",
+          "institution": "Library of Congress"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "En 1814 los británicos quemaron el Capitolio y la Biblioteca del Congreso de Estados Unidos.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "when the British burned the nation's Capitol and the Library of Congress"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "En 1815 el Congreso compró la biblioteca personal de Thomas Jefferson por 23.950 dólares.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Congress purchased Jefferson's library for $23,950 in 1815"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Llegaron 6.487 volúmenes, más del doble de lo que se había perdido en el incendio.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "more than doubled the holdings"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No decir que Jefferson la donó: la vendió. No afirmar que se conserva entera: un incendio en 1851 destruyó cerca de dos tercios.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "engelbart_mouse",
+      "title": "El primer ratón tenía un solo botón",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The Mouse - Revolution",
+          "url": "https://www.computerhistory.org/revolution/input-output/14/350",
+          "institution": "Computer History Museum"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Según se cuenta, Doug Engelbart concibió el ratón durante una conferencia en 1961.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "reportedly conceived the mouse during a conference lecture in 1961"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "El primer prototipo lo construyó el ingeniero Bill English; usaba ruedas de canto y solo tenía espacio para un botón.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "had space for only one button"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El diseño de 1963 se inspiró en los planímetros, aparatos mecánicos del siglo XIX para medir áreas.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "inspired by mechanical area-measuring devices called planimeters"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Mantener 'según se cuenta' para 1961. No afirmar que fue de madera (esta fuente no lo dice). No decir que Engelbart fue el único inventor: Telefunken desarrolló algo similar.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "olympic_kotinos",
+      "title": "El premio olímpico era una rama de olivo",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Prizes - Olympic Games",
+          "url": "https://olympicgames.culture.gov.gr/en/epathla/",
+          "institution": "Ministerio de Cultura de Grecia"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "En la antigua Olimpia, el premio era el kotinos, una corona de olivo silvestre.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the prize was the kotinos , a crown from the wild olive"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Ese olivo crecía junto al templo de Zeus.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "that grew next to the temple of Zeus"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Solo había un vencedor por prueba que recibía el kotinos.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "only one victor per event"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar que los atletas no recibieran nada más: sus ciudades podían premiarlos. Juegos antiguos, no modernos.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "ham_chimp",
+      "title": "Ham, el primer chimpancé en el espacio",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "A Brief History of Animals in Space",
+          "url": "https://www.nasa.gov/history/a-brief-history-of-animals-in-space/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El 31 de enero de 1961, Ham se convirtió en el primer chimpancé en el espacio, en un vuelo suborbital.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "became the first chimpanzee in space"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Su nombre era un acrónimo de Holloman Aero Med.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "whose name was an acronym for H olloman A ero M ed"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Por problemas técnicos, la nave alcanzó 157 millas de altitud, más de lo previsto.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "reached an altitude of 157 miles"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Vuelo suborbital, no orbital. No decir 'primer animal' ni 'primer primate' en el espacio. Tono respetuoso con los animales usados en pruebas.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "liberty_bell_crack",
+      "title": "La grieta de la Campana de la Libertad es una reparación",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The Liberty Bell",
+          "url": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm",
+          "institution": "National Park Service"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La gran grieta visible de la Campana de la Libertad es en realidad una reparación.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "is actually the repair job!"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "En 1846 se ensanchó una grieta fina con una técnica llamada 'stop drilling' para frenar su avance.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "using a technique called \"stop drilling\""
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "La campana la fundieron en Filadelfia John Pass y John Stow, en 1753.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "who cast the bell (John Pass and John Stow)"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "La causa de la grieta original no está documentada: no repetir leyendas (funeral de Marshall, etc.) como hechos.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "eiffel_expansion",
+      "title": "La Torre Eiffel crece en verano",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Why does the Eiffel Tower change size?",
+          "url": "https://www.toureiffel.paris/en/news/history-and-culture/why-does-eiffel-tower-change-size",
+          "institution": "Tour Eiffel (SETE)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Con el calor, la Torre Eiffel gana unos milímetros de altura por dilatación térmica.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "makes the Eiffel Tower a few millimeters taller"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "La dilatación también la inclina ligeramente en dirección contraria al sol.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "tilt slightly away from the sun"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Su altura también ha cambiado al añadir antenas en 1957, 2000 y 2022.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "in 1957, 2000 and 2022, to broadcast radio and television"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Milímetros, no centímetros: no exagerar. La inclinación es mínima y no afecta a la estructura.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "nelson_coat",
+      "title": "La casaca de Nelson todavía tiene el agujero de la bala",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Nelson's Trafalgar Coat",
+          "url": "https://www.rmg.co.uk/national-maritime-museum/attractions/nelsons-trafalgar-coat",
+          "institution": "Royal Museums Greenwich"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El almirante Nelson ganó la batalla de Trafalgar de 1805, pero murió a bordo del HMS Victory.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "dying aboard HMS Victory"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "El agujero de la bala que lo alcanzó se ve todavía en el hombro izquierdo de su casaca.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "is visible in the left shoulder of the coat"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Las manchas de sangre de la casaca se atribuyen a su secretario, John Scott, muerto antes en el combate.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "thought to be from Nelson's secretary, John Scott"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Las manchas se 'atribuyen' (thought to be): mantener la cautela. No mostrar sangre de forma gráfica; ilustración sobria.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "threepence_12_sides",
+      "title": "Una moneda de doce lados para los apagones",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Threepence",
+          "url": "https://www.royalmintmuseum.org.uk/journal/curators-corner/threepence/",
+          "institution": "Royal Mint Museum"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "En 1937 el Reino Unido introdujo una moneda de tres peniques de doce lados.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a 12-sided nickel-brass piece"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Pesaba casi cinco veces más que la antigua de plata del mismo valor.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "weighing almost five times as much as its silver counterpart"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Durante los apagones de la Segunda Guerra Mundial, se la elogiaba como la moneda más fácil de reconocer.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the easiest coin to recognise during the blackouts"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "El elogio lo atribuye la fuente a cobradores de autobús y otros: no presentarlo como estadística.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "loc_smallest_book",
+      "title": "Un libro del tamaño de un punto",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Fascinating Facts",
+          "url": "https://www.loc.gov/about/fascinating-facts/",
+          "institution": "Library of Congress"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El libro más pequeño de la Biblioteca del Congreso es 'Old King Cole'.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "is “Old King Cole.”"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Mide aproximadamente lo mismo que el punto al final de una frase.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "about the size of the period at the end of this sentence"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El más grande de esa biblioteca es un libro de 5 por 7 pies con imágenes de Bután.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "5-by-7 foot book featuring color images of Bhutan"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Es el más pequeño de esa biblioteca, no del mundo. La página es una ficha institucional; no actualizar cifras de fondos.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "spacewar_1962",
+      "title": "Un videojuego de naves en 1962",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Spacewar!",
+          "url": "https://www.computerhistory.org/pdp-1/spacewar/",
+          "institution": "Computer History Museum"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Spacewar! lo concibieron en 1961 Steve Russell, Martin Graetz y Wayne Wiitanen.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "conceived by Steve Russell, Martin Graetz and Wayne Wiitanen in 1961"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "En el juego, dos jugadores manejan cada uno una nave e intentan destruir la del otro.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "each in command of a spaceship"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Necesitaba más de 100.000 cálculos por segundo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "required over 100,000 calculations per second"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No llamarlo 'el primer videojuego de la historia': hay precedentes. Decir 'uno de los primeros videojuegos para ordenador'.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "olympic_stadion",
+      "title": "Las Olimpiadas llevaban el nombre de un corredor",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Foot racing events",
+          "url": "https://olympicgames.culture.gov.gr/en/agonismata/dromika_agwnizmata/index.html",
+          "institution": "Ministerio de Cultura de Grecia"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Cada Olimpiada antigua recibía el nombre del vencedor de la carrera del estadio.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "each Olympiad was named after the victor in the stadion"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Los corredores competían desnudos, descalzos y cubiertos de aceite.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Runners competed nude, barefoot and covered in oil"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Juegos antiguos. Ilustración sin desnudos explícitos: siluetas estilizadas.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "laika_kudryavka",
+      "title": "El verdadero nombre de Laika",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "A Brief History of Animals in Space",
+          "url": "https://www.nasa.gov/history/a-brief-history-of-animals-in-space/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El 3 de noviembre de 1957, el Sputnik 2 entró en órbita con una perra llamada Laika a bordo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "with a dog named Laika aboard"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Su nombre real era Kudryavka, que significa 'Rizadita'.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "had the real name of Kudryavka"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Era una perra callejera, pequeña y mestiza, recogida de la calle.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a small, stray mongrel picked up from the street"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "La misión no tenía plan de reentrada y Laika murió a las pocas horas: no ocultarlo ni presentarlo como final feliz. Tono respetuoso, sin dramatizar.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "golden_spike",
+      "title": "El ferrocarril no se terminó donde dicen los libros",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Frequently Asked Questions - Golden Spike",
+          "url": "https://www.nps.gov/gosp/faqs.htm",
+          "institution": "National Park Service"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El primer ferrocarril transcontinental de Estados Unidos se completó en Promontory Summit, no en Promontory Point.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "The correct name for this location is Promontory Summit"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Promontory Point está unas 35 millas al sur del lugar real.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Promontory Point is thirty-five miles south of Golden Spike"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El clavo de oro 'real' de la ceremonia se conserva en Palo Alto, California.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "is in Palo Alto, California"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "El error viene de crónicas de 1869 repetidas después. No dar cifras de asistentes: las estimaciones varían entre 300 y 1.500.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "eiffel_construction",
+      "title": "La Torre Eiffel se levantó en poco más de dos años",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The birth of the Eiffel Tower",
+          "url": "https://www.toureiffel.paris/en/the-monument/history",
+          "institution": "Tour Eiffel (SETE)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La Torre Eiffel se construyó para la Exposición Universal de París de 1889, centenario de la Revolución Francesa.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the 100th anniversary of the French Revolution"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Las obras empezaron el 26 de enero de 1887.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Construction began on January 26, 1887"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Se terminó el 31 de marzo de 1889, tras 2 años, 2 meses y 5 días.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "2 years, 2 months and 5 days"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar que fue la estructura más alta del mundo sin fuente. No dar número de remaches ni obreros.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "towns_local_time",
+      "title": "Cuando cada ciudad tenía su propia hora",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "What is Greenwich Mean Time (GMT)",
+          "url": "https://www.rmg.co.uk/stories/time/greenwich-mean-time-gmt",
+          "institution": "Royal Museums Greenwich"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Hasta mediados del siglo XIX, casi cada ciudad británica tenía su propia hora local, marcada por el Sol.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "almost every town kept its own local time"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "La hora de Bristol iba 10 minutos por detrás de la de Greenwich.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Bristol Mean Time (10 minutes behind GMT)"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "La expansión del ferrocarril hizo imprescindible una hora nacional común.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the need for an national time standard became imperative"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Se refiere al Reino Unido. No extrapolar fechas de adopción legal a otros países.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "shilling_testoon",
+      "title": "La moneda que estrenó la cara del rey",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Shilling",
+          "url": "https://www.royalmintmuseum.org.uk/journal/curators-corner/shilling/",
+          "institution": "Royal Mint Museum"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El chelín inglés empezó a acuñarse en los últimos años de Enrique VII y al principio se llamaba testoon.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "was known as a testoon"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Fue una de las primeras monedas inglesas con un retrato realista del monarca, en lugar de uno genérico.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "one of the first English coins to bear a real portrait of the monarch"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Su nombre venía del italiano 'testone', una moneda introducida en Milán en 1474.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "introduced in Milan in 1474"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "'Real portrait' significa retrato realista, no 'retrato real' (de la realeza). Decir 'una de las primeras', no 'la primera'.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "nasa_meatball_worm",
+      "title": "La albóndiga y el gusano de la NASA",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Symbols of NASA",
+          "url": "https://www.nasa.gov/history/symbols-of-nasa/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La insignia redonda de la NASA, apodada 'meatball' (albóndiga), la diseñó el empleado James Modarelli en 1959.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "nicknamed the “meatball,” was designed by employee James Modarelli in 1959"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Entre 1975 y 1992 la NASA usó otro logotipo, apodado 'worm' (gusano).",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "used the “worm” logo from 1975 until 1992"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Ese logotipo se retiró en 1992 y volvió a imponerse la insignia clásica.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "That logo was retired in 1992"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar que el 'worm' esté prohibido hoy. La animación no reproduce los logotipos oficiales: usar formas genéricas.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "rushmore_hall",
+      "title": "La sala inacabada del monte Rushmore",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Hall of Records - Mount Rushmore",
+          "url": "https://www.nps.gov/moru/learn/historyculture/hall-of-records.htm",
+          "institution": "National Park Service"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Entre 1938 y 1939 se excavó un túnel de 70 pies detrás de las caras del monte Rushmore, para una Sala de los Registros.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a 70-foot tunnel was blasted into the mountain"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "La obra se detuvo en 1939, cuando el Congreso ordenó trabajar solo en las caras.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Congress directed that construction should be executed only on the faces"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El túnel sigue tallado en bruto.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "remains very rough cut"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Es un túnel inacabado documentado, no un misterio. No afirmar qué contiene hoy salvo lo que diga la fuente.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "eiffel_name",
+      "title": "La Torre Eiffel no siempre se llamó así",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "The Iron Lady: nicknaming the Eiffel Tower",
+          "url": "https://www.toureiffel.paris/en/news/history-and-culture/iron-lady-nicknaming-eiffel-tower",
+          "institution": "Tour Eiffel (SETE)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Cuando se proyectó en 1885, se llamaba 'la Torre de Hierro de 300 metros'.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "it was called “the 300-Meter Iron Tower”"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Pronto pasó a ser 'la torre del señor Eiffel' y después 'la Torre Eiffel'.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "but that soon became “Mr Eiffel’s Tower”"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El nombre se hizo oficial cuando el libro de Eiffel se reeditó en 1902 como 'La Torre Eiffel en 1900'.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "making the name official"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Gustave Eiffel no fue el único diseñador del proyecto: no presentarlo como autor exclusivo.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "royal_observatory",
+      "title": "Un observatorio para no perderse en el mar",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "History of Royal Observatory Greenwich",
+          "url": "https://www.rmg.co.uk/stories/space-astronomy/history-royal-observatory",
+          "institution": "Royal Museums Greenwich"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El Real Observatorio de Greenwich se fundó en 1675.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Founded in 1675"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Se creó para resolver el problema de calcular la longitud en el mar.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "founded in order to find a solution to this 'longitude problem'"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "El 4 de marzo de 1675 el rey Carlos II nombró a John Flamsteed su observador astronómico.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "On 4 March 1675 Charles appointed John Flamsteed"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "Flamsteed fue nombrado antes de la fundación formal: no mezclar fechas.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "glenn_returns",
+      "title": "John Glenn volvió al espacio 36 años después",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "John Glenn Returns to Space on STS-95 Mission",
+          "url": "https://www.nasa.gov/image-article/john-glenn-returns-space-sts-95-mission/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "El 29 de octubre de 1998, el transbordador Discovery despegó con el senador John Glenn a bordo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "space shuttle Discovery launched with Senator John Glenn aboard"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Era su primer vuelo desde 1962, cuando se convirtió en el primer estadounidense en orbitar la Tierra.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the first American to orbit the Earth"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No citar la edad de Glenn ni récords de edad: la fuente no los da. 'Primer estadounidense en orbitar', no 'primer humano'.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "liberty_torch",
+      "title": "La antorcha de la Estatua de la Libertad es una réplica",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Statue of Liberty's Original Torch Completes Move to New Home",
+          "url": "https://www.nps.gov/stli/learn/news/statue-of-liberty-s-original-torch-completes-move-to-new-home.htm",
+          "institution": "National Park Service"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "La antorcha original de la Estatua de la Libertad se retiró en 1984, durante la restauración del centenario.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "the torch was removed from atop the monument"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "En noviembre de 1985 se instaló una réplica del diseño original de Bartholdi.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "a replica of Bartholdi's original design was installed"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "En 2018 la antorcha original se trasladó al nuevo Museo de la Estatua de la Libertad.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "original torch moved into its new home"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar que la antorcha actual sea de oro macizo. No decir que el público puede subir a la antorcha.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "voyager_greetings",
+      "title": "Saludos de la Tierra en 55 idiomas",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "Golden Record Greetings",
+          "url": "https://science.nasa.gov/mission/voyager/golden-record-contents/greetings/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Las sondas Voyager llevan un disco dorado que incluye saludos en 55 idiomas.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "greetings in 55 languages were included"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "La NASA encargó el saludo al astrónomo Carl Sagan, de la Universidad de Cornell.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "asked Dr Carl Sagan of Cornell University"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Los hablantes no recibieron instrucciones, salvo que fuera un saludo breve a posibles extraterrestres.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "They were given no instructions on what to say"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No afirmar que el disco haya sido encontrado ni escuchado por nadie. Saludos y música son contenidos distintos del disco.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "apollo12_lightning",
+      "title": "El cohete del Apolo 12 recibió dos rayos",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "55 Years Ago: Apollo 12 Launches",
+          "url": "https://www.nasa.gov/image-article/55-years-ago-apollo-12-launches/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "Durante el despegue, el cohete Saturno V del Apolo 12 fue alcanzado dos veces por un rayo.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "was struck twice by lightning"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Aun así, el 19 de noviembre de 1969 su módulo lunar se posó en la Luna.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "On Nov. 19, 1969, the lunar module landed on the Moon"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No inventar detalles técnicos de la recuperación (interruptores, diálogos): la fuente no los da.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
+    },
+    {
+      "id": "strelka_puppies",
+      "title": "Una perra espacial y un cachorro para Kennedy",
+      "sources": [
+        {
+          "id": "s1",
+          "title": "A Brief History of Animals in Space",
+          "url": "https://www.nasa.gov/history/a-brief-history-of-animals-in-space/",
+          "institution": "NASA"
+        }
+      ],
+      "facts": [
+        {
+          "id": "f1",
+          "text": "En agosto de 1960, las perras Belka y Strelka viajaron al espacio en el Sputnik 5, junto a otros animales y plantas.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Belka (“Squirrel”) and Strelka"
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "text": "Strelka tuvo después una camada de seis cachorros.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "Strelka later gave birth to a litter of six puppies"
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "text": "Uno de ellos fue regalado a John F. Kennedy para sus hijos.",
+          "evidence": [
+            {
+              "source_id": "s1",
+              "quote": "given to JFK as a gift for his children"
+            }
+          ]
+        }
+      ],
+      "editorial_notes": "No añadir detalles no citados sobre el vuelo o el regreso. Tono respetuoso con los animales.",
+      "reviewed_on": "2026-10-28",
+      "origin": "curated_institutional_sources"
     }
   ]
 }

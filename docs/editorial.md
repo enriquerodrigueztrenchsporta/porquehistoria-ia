@@ -14,7 +14,7 @@ Los roles IA usan Ollama en el propio ordenador o en el ejecutor Linux de GitHub
 
 ## Fuentes y renovación de temas
 
-`data/topics.json` contiene ocho temas iniciales contrastados durante la preparación del proyecto, con notas para evitar errores frecuentes. Algunos tienen una fuente institucional especializada; otros dos museos o instituciones. `institution_count` indica la cantidad real. No se etiqueta una sola institución como doble comprobación independiente.
+`data/topics.json` contiene 38 temas contrastados durante la preparación del proyecto (8 iniciales y 30 añadidos el 28-10-2026; cada cita se comprobó literalmente contra la fuente en vivo con `research_topic`), con notas para evitar errores frecuentes. Algunos tienen una fuente institucional especializada; otros dos museos o instituciones. `institution_count` indica la cantidad real. No se etiqueta una sola institución como doble comprobación independiente.
 
 Cuando se agota la cola, `discover_topic` explora enlaces de secciones históricas de instituciones autorizadas: Royal Museums Greenwich, NASA, British Library y Torre Eiffel. El investigador IA propone hechos solo a partir de páginas descargadas. Las citas propuestas se cotejan literalmente y luego las revisa otro contexto IA. Las URLs no pueden ser inventadas por el modelo. No se reutilizan artículos ya empleados. La búsqueda está acotada; si no encuentra evidencia suficiente, devuelve error para que el programador omita la publicación y reintente después. No hay una promesa de catálogo infinito ni de una publicación exitosa todos los días.
 
