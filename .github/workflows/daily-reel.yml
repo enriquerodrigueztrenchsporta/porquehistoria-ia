@@ -1,4 +1,4 @@
-# Daily HistoryFacts Reel: research -> AI agents (Ollama) -> animation + Piper voice -> QA -> publish at 20:00 Madrid.
+# Daily PorQueHistoria Reel: research -> AI agents (Ollama) -> animation + Piper voice -> QA -> publish at 20:00 Madrid.
 #
 # GitHub cron is UTC and has no DST, so two triggers are scheduled (15:07 and 16:07 UTC)
 # and the "window" step keeps only the one that lands around 17:00 Madrid local time.
@@ -20,7 +20,7 @@ permissions:
   contents: write   # the publication ledger is committed to data/publication-state.json
 
 concurrency:
-  group: instagram-historyfacts
+  group: instagram-porquehistoria
   cancel-in-progress: false
 
 jobs:

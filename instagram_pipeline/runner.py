@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 def caption_for(episode):
     parts = [episode["title"], "Animación y narración creadas automáticamente con IA. Ilustraciones esquemáticas.", "Fuentes:"]
     parts.extend(f"• {s['title']}: {s['url']}" for s in episode["sources"])
-    parts.append("#Historia #CuriosidadesHistoricas #HistoryFacts")
+    parts.append("#Historia #CuriosidadesHistoricas #PorQueHistoria")
     caption = "\n\n".join(parts)
     if len(caption) > 2200:
         raise RuntimeError("El pie con fuentes supera el límite de Instagram.")
@@ -103,7 +103,7 @@ def daily(preview=False):
 
     config = InstagramConfig(user_id=os.environ.get("INSTAGRAM_USER_ID", ""),
                              access_token=os.environ.get("INSTAGRAM_ACCESS_TOKEN", ""),
-                             expected_username=os.environ.get("IG_EXPECTED_USERNAME") or "historyfacts",
+                             expected_username=os.environ.get("IG_EXPECTED_USERNAME") or "porquehistoria",
                              api_version=os.environ.get("IG_API_VERSION") or "v25.0",
                              login_mode="facebook")
     record = ledger.data["days"].setdefault(day, {})
@@ -159,7 +159,7 @@ def doctor():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="HistoryFacts: animación histórica basada en evidencia")
+    parser = argparse.ArgumentParser(description="PorQueHistoria: animación histórica basada en evidencia")
     parser.add_argument("command", choices=("doctor", "demo", "daily"))
     parser.add_argument("--preview", action="store_true", help="Generar con IA y revisar, sin publicar")
     args = parser.parse_args()

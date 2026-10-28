@@ -19,19 +19,19 @@ El token debe tener vigencia suficiente para ejecución desatendida. Los tokens 
 
 ### Asistente seguro para GitHub Actions
 
-La cuenta de destino acordada es `@historyfacts`. Para vincular la Página desde el móvil: Instagram → perfil → Editar perfil → Información pública del negocio / Información del perfil → Página → Conectar o crear → elegir una Página que administras o crear una nueva. Los nombres de los menús pueden variar. [Ayuda oficial de Instagram sobre la vinculación](https://help.instagram.com/570895513091465).
+La cuenta de destino acordada es `@porquehistoria`. Para vincular la Página desde el móvil: Instagram → perfil → Editar perfil → Información pública del negocio / Información del perfil → Página → Conectar o crear → elegir una Página que administras o crear una nueva. Los nombres de los menús pueden variar. [Ayuda oficial de Instagram sobre la vinculación](https://help.instagram.com/570895513091465).
 
 Después de configurar tu aplicación de Meta, abrir el [Explorador de la API Graph](https://developers.facebook.com/tools/explorer/), seleccionar **tu propia aplicación**, generar un token de usuario de Facebook y autorizar los permisos de publicación anteriores para la Página correcta. Usar el [Depurador oficial de tokens](https://developers.facebook.com/tools/debug/accesstoken/) para comprobar el token y, si está disponible para ese tipo de token/aplicación, extenderlo a larga duración. No usar un token efímero de prueba para la programación diaria. La interfaz de Meta y los permisos habilitados dependen del estado de la aplicación; si no permite generar/extender el token, resolver primero el acceso en Meta.
 
 Con un **token de usuario de larga duración** disponible, ejecutar en PowerShell:
 
 ```powershell
-.\scripts\connect_instagram.ps1 -Repository enriquerodrigueztrenchsporta/historyfacts-ia
+.\scripts\connect_instagram.ps1 -Repository enriquerodrigueztrenchsporta/porquehistoria-ia
 ```
 
-El asistente pide el token en una entrada oculta, descubre la Página vinculada a `historyfacts`, obtiene su token, comprueba la cuenta y el acceso a publicación, y escribe `INSTAGRAM_USER_ID` y `INSTAGRAM_ACCESS_TOKEN` en GitHub Actions Secrets mediante entrada estándar. Guarda también `IG_LOGIN_MODE`, `IG_EXPECTED_USERNAME` e `IG_API_VERSION` como variables. No escribe tokens en archivos, argumentos de procesos o mensajes. No solicita la contraseña de Instagram. El repositorio debe existir y `gh` debe tener acceso a él. El script **no activa** el horario ni publica un vídeo; la activación del workflow es un paso separado del despliegue.
+El asistente pide el token en una entrada oculta, descubre la Página vinculada a `porquehistoria`, obtiene su token, comprueba la cuenta y el acceso a publicación, y escribe `INSTAGRAM_USER_ID` y `INSTAGRAM_ACCESS_TOKEN` en GitHub Actions Secrets mediante entrada estándar. Guarda también `IG_LOGIN_MODE`, `IG_EXPECTED_USERNAME` e `IG_API_VERSION` como variables. No escribe tokens en archivos, argumentos de procesos o mensajes. No solicita la contraseña de Instagram. El repositorio debe existir y `gh` debe tener acceso a él. El script **no activa** el horario ni publica un vídeo; la activación del workflow es un paso separado del despliegue.
 
-El script deriva el token de Página del token de usuario que proporcionas, pero no verifica ni extiende su duración automáticamente: comprobar la duración en Meta es necesario. El identificador numérico se descubre sin pedirlo al usuario. En ejecución, `expected_username="historyfacts"` verifica de nuevo que no se esté preparando una publicación para otra cuenta.
+El script deriva el token de Página del token de usuario que proporcionas, pero no verifica ni extiende su duración automáticamente: comprobar la duración en Meta es necesario. El identificador numérico se descubre sin pedirlo al usuario. En ejecución, `expected_username="porquehistoria"` verifica de nuevo que no se esté preparando una publicación para otra cuenta.
 
 ## Alternativa: Instagram Login
 

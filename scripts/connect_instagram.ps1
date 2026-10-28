@@ -4,7 +4,7 @@ param(
     [ValidatePattern('^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$')]
     [string]$Repository,
     [ValidatePattern('^[A-Za-z0-9_.]+$')]
-    [string]$ExpectedUsername = 'historyfacts',
+    [string]$ExpectedUsername = 'porquehistoria',
     [ValidatePattern('^v[0-9]+\.0$')]
     [string]$ApiVersion = 'v25.0'
 )
@@ -85,7 +85,7 @@ try {
         # Use only the cursor, not Meta's next URL (which may contain a token).
         $after = $pages.paging.cursors.after
         if (-not $after) { throw 'No se pudo continuar la lista de Paginas de Meta.' }
-        if ($pageNumber -eq 19) { throw 'Demasiadas Paginas para este asistente; limita el acceso del token a HistoryFacts.' }
+        if ($pageNumber -eq 19) { throw 'Demasiadas Paginas para este asistente; limita el acceso del token a PorQueHistoria.' }
     }
     if ($found.Count -ne 1) {
         throw ('No se encontro una unica Pagina autorizada vinculada a @' + $ExpectedUsername + '. Revisa la vinculacion y los permisos del token.')

@@ -55,7 +55,7 @@ class Ledger:
         request = Request(url, method=method, data=json.dumps(body).encode() if body else None,
                           headers={"Authorization": f"Bearer {self.token}",
                                    "Accept": "application/vnd.github+json",
-                                   "User-Agent": "historyfacts-pipeline",
+                                   "User-Agent": "porquehistoria-pipeline",
                                    "Content-Type": "application/json",
                                    "X-GitHub-Api-Version": "2022-11-28"})
         try:

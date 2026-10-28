@@ -102,7 +102,7 @@ class InstagramTests(unittest.TestCase):
         self.assertEqual(transport.calls, [])
 
     def test_expected_username_mismatch_prevents_creation(self):
-        config = InstagramConfig("123", "TEST_SECRET", expected_username="historyfacts")
+        config = InstagramConfig("123", "TEST_SECRET", expected_username="porquehistoria")
         publisher, transport = self.publisher([{"id": "123", "username": "someone_else"}], config)
         with self.assertRaises(InstagramError):
             self.prepare(publisher)
@@ -111,9 +111,9 @@ class InstagramTests(unittest.TestCase):
         self.assertFalse(self.journal.exists())
 
     def test_expected_username_verified_before_upload(self):
-        config = InstagramConfig("123", "TEST_SECRET", expected_username="historyfacts")
+        config = InstagramConfig("123", "TEST_SECRET", expected_username="porquehistoria")
         publisher, transport = self.publisher([
-            {"id": "123", "username": "HistoryFacts"}, self.created(),
+            {"id": "123", "username": "PorQueHistoria"}, self.created(),
             {"success": True}, {"status_code": "FINISHED"},
         ], config)
         self.assertEqual(self.prepare(publisher)["state"], "ready")
