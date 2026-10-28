@@ -139,3 +139,11 @@ class NormalizeVisualsTests(unittest.TestCase):
         self.assertEqual(episode["scenes"][0]["visual"], {"kind": "map", "title": "T", "label": "L"})
         self.assertEqual(episode["scenes"][1]["visual"]["kind"], "artifact")
         self.assertEqual(episode["scenes"][0]["narration"], "Texto")
+
+
+class VisualAsStringTests(unittest.TestCase):
+    def test_visual_given_as_plain_string_is_wrapped(self):
+        from instagram_pipeline.agents import normalize_visuals
+        episode = {"scenes": [{"narration": "Texto", "visual": "timeline"}]}
+        normalize_visuals(episode)
+        self.assertEqual(episode["scenes"][0]["visual"], {"kind": "timeline", "title": "", "label": ""})

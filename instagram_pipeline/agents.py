@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+from pathlib import Path
 from datetime import datetime, timezone
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
@@ -81,7 +82,12 @@ def normalize_visuals(episode: dict) -> dict:
     template is safe (no model output is executed) and avoids discarding a correct script.
     """
     for scene in episode.get("scenes") or []:
-        visual = scene.get("visual") if isinstance(scene, dict) else None
+        if not isinstance(scene, dict):
+            continue
+        visual = scene.get("visual")
+        if isinstance(visual, str):
+            # e.g. "visual": "timeline" — keep the template choice, texts stay empty.
+            visual = scene["visual"] = {"kind": visual, "title": "", "label": ""}
         if not isinstance(visual, dict):
             continue
         kind = str(visual.get("kind", "")).lower()
@@ -116,7 +122,8 @@ def validate_episode(episode: dict, evidence: dict) -> None:
             raise AgentError("Escena sin hechos identificados o con citas inventadas.")
         visual = scene.get("visual", {})
         if not isinstance(visual, dict) or visual.get("kind") not in VISUAL_KINDS:
-            raise AgentError("Tipo de animación no admitido.")
+            raise AgentError("Tipo de animación no admitido: " + json.dumps(visual, ensure_ascii=False)[:200]
+                             + f". Usa visual como objeto con kind en {sorted(VISUAL_KINDS)}.")
         for key, limit in (("title", 70), ("label", 100)):
             if not isinstance(visual.get(key), str) or len(visual[key]) > limit:
                 raise AgentError("Texto de animación inválido.")
@@ -181,6 +188,11 @@ def generate_episode(topic: dict, evidence: dict, ollama_url="http://127.0.0.1:1
     for attempt in range(2):
         episode = client.json(instructions, {"evidence": evidence, "brief": brief,
                                            "correction": str(last_error) if last_error else None})
+        drafts = os.environ.get("REJECTED_DRAFTS_DIR")
+        if drafts:  # kept for human review of rejected scripts (CI uploads it as an artifact)
+            Path(drafts).mkdir(parents=True, exist_ok=True)
+            (Path(drafts) / f"{topic['id']}-draft{attempt + 1}.json").write_text(
+                json.dumps(episode, ensure_ascii=False, indent=2), encoding="utf-8")
         try:
             report = verify_episode(normalize_visuals(episode), evidence, client)
             episode.update({"topic_id": topic["id"], "sources": evidence["sources"],

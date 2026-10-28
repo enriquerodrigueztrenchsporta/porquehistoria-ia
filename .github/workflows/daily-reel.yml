@@ -31,6 +31,7 @@ jobs:
       OLLAMA_MODEL: qwen2.5:7b
       OLLAMA_TIMEOUT: "900"
       PIPER_VOICE: ${{ github.workspace }}/models/es_ES-davefx-medium.onnx
+      REJECTED_DRAFTS_DIR: ${{ github.workspace }}/artifacts/rejected-drafts
     steps:
       - name: Publication window (Europe/Madrid)
         id: window
@@ -104,5 +105,6 @@ jobs:
             artifacts/*/evidence.json
             artifacts/*/caption.txt
             artifacts/*/render-manifest.json
+            artifacts/rejected-drafts/*.json
           retention-days: 14
           if-no-files-found: ignore
